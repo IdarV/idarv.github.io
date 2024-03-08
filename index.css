@@ -1,3 +1,9 @@
+@property --background-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #0b1416;
+}
+
 @property --color-green-main {
     syntax: "<color>";
     inherits: false;
@@ -28,9 +34,9 @@ html, body {
 }
 
 .page-container {
-    #background-color: var(--color-green-main);
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: var(--background-color);
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: column;
     height: 1150px;
@@ -46,28 +52,29 @@ html, body {
 }
 
 .content-container {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .recipe-container {
-    margin-top: 20px;
-    border-radius: 15px;
-    min-height: 300px;
-    max-height: 400px;
+    margin-top: 50px;
     display: flex;
-    background-color: var(--color-green-main);
 }
 
 .recipe-image {
+    object-fit: cover;
     border-radius: 15px;
     object-position: 0 100%;
-    max-width: 500px;
-    float: left;
-    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.ingredients-recipe-separator {
+    border-bottom: var(--color-sage-secondary) solid;
 }
 
 .recipe-separator {
-    border-bottom: var(--color-sage-secondary) solid;
+    margin-top: 20px;
+    border-bottom: var(--color-peach-fourth) solid;
 }
 
 .recipe-description {
@@ -77,8 +84,5 @@ html, body {
 
 h1, h2, h3, h4, h5, p, ul, li {
     font-family: verdana, serif;
+    color: #F2F2F2;
 }
-
-/*li::marker {*/
-/*    color: var(--color-peach-fourth);*/
-/*}*/
