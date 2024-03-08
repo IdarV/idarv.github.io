@@ -1,0 +1,84 @@
+@property --color-green-main {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #A5DD9B;
+}
+
+@property --color-sage-secondary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #C5EBAA;
+}
+
+@property --color-yellow-third {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #F6F193;
+}
+
+@property --color-peach-fourth {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #F2C18D;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-container {
+    #background-color: var(--color-green-main);
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    height: 1150px;
+}
+
+.header-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: var(--color-green-main) solid;
+}
+
+.content-container {
+    margin-top: 50px;
+}
+
+.recipe-container {
+    margin-top: 20px;
+    border-radius: 15px;
+    min-height: 300px;
+    max-height: 400px;
+    display: flex;
+    background-color: var(--color-green-main);
+}
+
+.recipe-image {
+    border-radius: 15px;
+    object-position: 0 100%;
+    max-width: 500px;
+    float: left;
+    object-fit: cover;
+}
+
+.recipe-separator {
+    border-bottom: var(--color-sage-secondary) solid;
+}
+
+.recipe-description {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1, h2, h3, h4, h5, p, ul, li {
+    font-family: verdana, serif;
+}
+
+/*li::marker {*/
+/*    color: var(--color-peach-fourth);*/
+/*}*/
