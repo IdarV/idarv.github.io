@@ -60,7 +60,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-bottom: var(--color-yellow-third ) solid;
+    border-bottom: var(--color-sage-secondary ) solid .01rem;
 }
 
 .header-row{
