@@ -108,7 +108,8 @@ html, body {
     padding-right: 50px;
 }
 
-h1, h2, h3, h4, h5, p, ul, li {
+h1, h2, h3, h4, h5, p, ul, li, a {
     font-family: verdana, serif;
     color: #F2F2F2;
 }
+
