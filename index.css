@@ -1,19 +1,19 @@
 @property --background-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #0b1416;
+    initial-value: #222b2c;
 }
 
 @property --color-green-main {
     syntax: "<color>";
     inherits: false;
-    initial-value: #A5DD9B;
+    initial-value: #b1f9a6;
 }
 
 @property --color-sage-secondary {
     syntax: "<color>";
     inherits: false;
-    initial-value: #C5EBAA;
+    initial-value: #d6e9c9;
 }
 
 @property --color-yellow-third {
@@ -60,7 +60,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-bottom: var(--color-sage-secondary ) solid .01rem;
+
 }
 
 .header-row{
@@ -73,7 +73,7 @@ html, body {
 }
 
 .recipe-container {
-    margin-top: 50px;
+
     display: flex;
 }
 
@@ -90,21 +90,27 @@ html, body {
     margin-right: 20px;
     width: 45px;
     height: 45px;
+    transition: transform 3s ease-in-out; 
+
 }
 
+.header-image:hover {
+         transform: rotate(1800deg) scale(3);;
+
+    }
+
 .ingredients-recipe-separator {
-    border-bottom: var(--color-sage-secondary) solid;
+    border-bottom: var(--color-sage-secondary) solid .01rem;
 }
 
 .recipe-separator {
     width: 100%;
-    margin-top: 20px;
     border-bottom: var(--color-peach-fourth) solid;
 }
 
 .recipe-description {
     width: 100%;
-    padding-left: 50px;
+
     padding-right: 50px;
 }
 
